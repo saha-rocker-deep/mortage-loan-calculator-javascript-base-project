@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+     <style>
+     .n1{
+          width:450px;
+           height:420px;
+            border:1px solid black;
+             position:relative;
+               top:50px;
+               left:190px;
+                border-radius: 15px;
+                box-shadow: 10px 10px 10px 10px black;
+                 background-color: darkblue;
+     }
+     .uy1{
+         width:250px;
+           height:350px;
+            border:1px solid black;
+             background-color:darkblue;
+             position: relative;
+              top:50px
+     }
+     input{
+          width:320px;
+          height:20px;
+            position: relative;
+             top:40px;
+              left:10px;
+     }
+      button{
+            width:60px;
+             height:20px;
+              position:relative;
+                top:40px;
+                 left:16px;
+
+      }
+     </style>
+}
+<body>
+    <div class="n1">
+<div><input class="nm1"type="text"><button class="k1">add task</button></div>
+  <div class="uy1">
+
+
+  </div>
+    </div>
+     <script>
+       document.querySelector(".k1").addEventListener("click",f1)
+         function f1(){
+               const v=document.querySelector(".nm1").value
+
+                 const l=document.createElement("p")
+                 l.innerHTML=v;
+                 l.style.color="red"
+                   l.style.width="200px"
+                   l.style.height="30px"
+                l.style.border="1px solid red"
+                 
+                    
+                    
+                   document.querySelector(".uy1").appendChild(l)
+                    l.addEventListener("mouseover",f1)
+                    function f1(){
+                           l.style.display="none"
+                    }
+                
+         }   
+     </script>
+</body>
+</html>
